@@ -2,7 +2,7 @@ document.querySelector("#currentDay").innerHTML = moment().format("MM-DD-YYYY hh
 let currentTime = moment().format("HHHH")
 
 let timeBoxes = document.querySelectorAll(".timebox")
-let saveButtons = document.querySelectorAll(".timebox > button")
+let saveButtons = document.querySelectorAll(".saveBtn")
 
 for(i=0;i<timeBoxes.length;i++){
     let storageSearch = toString(timeBoxes[i].dataset.time)
